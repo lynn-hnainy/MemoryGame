@@ -56,6 +56,44 @@
                 } */ 
             });
         }
+
+        //effects function
+        function effects(colorNum){
+            if(colorNum===0){
+                    const green=document.getElementById("green");
+                    sounds[0].play();
+                    green.classList.add("press");
+                    //must add something to remove effects
+                    //should remove the effect after a specific time
+                    setTimeout(function(){
+                        green.classList.remove("press");
+                        },200)
+                }
+            if(colorNum===1){
+                const red=document.getElementById("red");
+                sounds[1].play();
+                red.classList.add("press");
+                setTimeout(function(){
+                    red.classList.remove("press");
+                    },200)
+            }
+            if(colorNum===2){
+                const yellow=document.getElementById("yellow");
+                sounds[2].play();
+                yellow.classList.add("press");
+                setTimeout(function(){
+                    yellow.classList.remove("press");
+                    },200)
+            }
+            if(colorNum===3){
+                const blue=document.getElementById("blue");
+                sounds[3].play();
+                blue.classList.add("press");
+                setTimeout(function(){
+                    blue.classList.remove("press");
+                    },200)
+            }
+        }
     </script>
 </body>
 </html>
