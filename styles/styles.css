@@ -30,3 +30,24 @@
     align-items: center;
     margin: 30px;
 }
+.btn{
+    width:200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 8px solid black;
+}
+.green{
+    background-color: green;
+    margin-right: 20px;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+
+    background-color: yellow;
+    margin-right: 20px;
+}
