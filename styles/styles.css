@@ -58,3 +58,7 @@ body{
     background-color: rgb(194, 188, 188);
     box-shadow: 5px 5px 5px white;
 }
+
+.wrong{
+    background-color: red;
+}

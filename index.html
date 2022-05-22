@@ -131,8 +131,13 @@
             }
                 //choice should not be generated onclick it should wait a bit
             }
+
             else{
-                document.body.style.backgroundColor = "red";
+                document.body.classList.add("wrong");
+                document.getElementById("level").innerHTML="Game Over.Press any key to restart";
+                setTimeout(() => {
+                    document.body.classList.remove("wrong");
+                }, 200);
             }
         }
     </script>
