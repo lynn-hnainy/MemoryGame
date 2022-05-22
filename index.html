@@ -27,6 +27,35 @@
         //i need an array to track clicked color
         var arrayClicked=[];
         var level=1;
+        
+        //onclick events
+        btns = document.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            var sounds = [new Audio("sounds/green.mp3"), new Audio("sounds/red.mp3"), new Audio("sounds/yellow.mp3"), new Audio("sounds/blue.mp3")];
+            btns[i].addEventListener("click", function () {
+                //console.log(this.id);
+			    if(this.id=="green"){
+                    arrayClicked.push(0);
+                    effects(0);//effects is used to generate sound and coloring effects at each click and generation
+                }
+                if(this.id=="red"){
+                    arrayClicked.push(1);
+                    effects(1);
+                }
+                if(this.id=="yellow"){
+                    arrayClicked.push(2);
+                    effects(2);
+                }
+                if(this.id=="blue"){
+                    arrayClicked.push(3);
+                    effects(3);
+                }
+                //for testing
+                /*for(var j=0;j<arrayClicked.length;j++){
+                    console.log(arrayClicked[j]);
+                } */ 
+            });
+        }
     </script>
 </body>
 </html>
