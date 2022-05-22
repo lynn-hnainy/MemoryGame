@@ -133,8 +133,11 @@
             }
 
             else{
+                var looser=new Audio("sounds/wrong.mp3");
+                looser.play();
                 document.body.classList.add("wrong");
                 document.getElementById("level").innerHTML="Game Over.Press any key to restart";
+                level=1;
                 setTimeout(() => {
                     document.body.classList.remove("wrong");
                 }, 200);
