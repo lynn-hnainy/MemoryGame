@@ -28,6 +28,20 @@
         var arrayClicked=[];
         var level=1;
         
+        //at keypress and right guess
+        //all of this should happen only if the user pressed any button
+        document.onkeypress=function(){
+            //math.floor() will return the largest integer les than or equal to the given number
+            //math.random() will generate any number between 0 and less than  1
+            //math.randon()*4 will generate any number between 0 and less than 4
+            //math.randon() with math.floor() will only generate integers between 0 and 3
+            var choice=Math.floor(Math.random()*4);
+            //console.log(choice);
+            arrayGenerated.push(choice);
+            effects(choice);
+            document.getElementById("level").innerHTML="Level "+level;
+        }
+        
         //onclick events
         btns = document.getElementsByClassName("btn");
         for (var i = 0; i < btns.length; i++) {
