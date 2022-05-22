@@ -115,7 +115,7 @@
                 //when the choice match the patern the game should generate a new color and ask the user to enter the pattern all over again
                 //the problem with this approach is that at each click if it matches that game generates a new color which is wrong the game should generate a new color only if the user matches all the pattern colors
                 if(arrayGenerated.length==arrayClicked.length){
-                    if(level<3){
+                    if(level<15){
                         setTimeout(function(){
                             var choice=Math.floor(Math.random()*4);
                             arrayGenerated.push(choice);
