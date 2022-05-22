@@ -11,3 +11,22 @@
     flex-direction: column;
     margin-top:30px;
 }
+.container .title h1{
+    text-align: center;
+    font-family: 'Press Start 2P', Fantasy;
+    color: rgba(243, 243, 22, 0.918);
+}
+.top{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.bottom{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
