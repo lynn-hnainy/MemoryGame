@@ -41,7 +41,7 @@
             effects(choice);
             document.getElementById("level").innerHTML="Level "+level;
         }
-        
+
         //onclick events
         btns = document.getElementsByClassName("btn");
         for (var i = 0; i < btns.length; i++) {
@@ -106,6 +106,24 @@
                 setTimeout(function(){
                     blue.classList.remove("press");
                     },200)
+            }
+        }
+        function check(chosen){
+            if(arrayClicked[chosen]===arrayGenerated[chosen]){
+                //here it should generate a new color after a certain time of cliking
+                //when the choice match the patern the game should generate a new color and ask the user to enter the pattern all over again
+                //the problem with this approach is that at each click if it matches that game generates a new color which is wrong the game should generate a new color only if the user matches all the pattern colors
+                
+                setTimeout(function(){
+                    var choice=Math.floor(Math.random()*4);
+                    arrayGenerated.push(choice);
+                    effects(choice);
+                    level+=1;
+                    document.getElementById("level").innerHTML="Level "+level;
+                    arrayClicked=[];
+                }, 1000);
+                
+                //choice should not be generated onclick it should wait a bit
             }
         }
     </script>
