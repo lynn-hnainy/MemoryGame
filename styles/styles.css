@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 *{
     margin:0;
     padding:0;
@@ -50,4 +51,8 @@
 
     background-color: yellow;
     margin-right: 20px;
+}
+.press{
+    background-color: rgb(194, 188, 188);
+    box-shadow: 5px 5px 5px white;
 }
